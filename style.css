@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    background-color: rgb(55, 138, 194);
+    list-style-type: none;
+    overflow: hidden;
+}
+
+ul>li {
+    float: right;
+    padding-right: 30px;
+}
+
+#logo {
+    float: left;
+    color: orangered;
+    font-size: 50px;
+    font-weight: 1000;
+    padding: 14px 16px;
+}
+
+li>a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 16px 16px;
+    display: block;
+    color: rgb(255, 251, 6);
+    margin-top: 10px;
+}
+
+li>a:hover {
+    background-color: rgb(17, 238, 65);
+    color: black;
+    border: 3px solid orangered;
+}
+
+#logo:hover {
+    background-color: rgb(255, 174, 0);
+    color: black;
+    border: 5px solid rgb(24, 105, 175);
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner>img {
+    width: 100%;
+}
+
+#overlap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 100px;
+    width: 100px;
+    top: 130px;
+    right: 90px;
+}
+
+
+/* #overlap>img {
+    border: 6px solid red;
+    border-radius: 10px 50px 50px 50px;
+} */
+
+.PlayerCardContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.PlayerCard {
+    width: 300px;
+    height: 400px;
+    background-color: yellow;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.PlayerCard:hover {
+    transform: scale(1.2);
+}
+
+.PlayerCard>img {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.PlayerCard>.info {
+    padding: 10px;
+}
